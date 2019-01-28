@@ -170,7 +170,8 @@ namespace Emailreader
                 }
                 if (foundMalicious == false)
                 {
-                    string path = @"C:\Users\10653836\Desktop\dll.txt";
+
+                    string path = AppDomain.CurrentDomain.BaseDirectory;
                     string[] contents = File.ReadAllLines(path);
                     if (contents.Any(item.Subject.Contains))
                     {

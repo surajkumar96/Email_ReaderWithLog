@@ -1,17 +1,8 @@
 ﻿using System;
 using System.IO;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading.Tasks;
 using System.Reflection;
-using VirusTotalNET;
-using VirusTotalNET.Results;
-using VirusTotalNET.ResponseCodes;
-using VirusTotalNET.Objects;
 using System.Configuration;
-using System.Threading;
 using System.Text.RegularExpressions;
-using Microsoft.Office.Interop.Outlook;
 using System.Linq;
 
 namespace Emailreader
@@ -20,7 +11,7 @@ namespace Emailreader
     class Program
     {
         public string ScanUrl = "";
-        public object mapiNameSpace;
+
         public bool foundMalicious = false;
         public static string MaliciousFolder { get; private set; }
         public static Microsoft.Office.Interop.Outlook.MAPIFolder destFolder;

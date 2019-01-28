@@ -75,5 +75,8 @@
   <ItemGroup>
     <Folder Include="attachments\" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="KeyValueForSubject.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
